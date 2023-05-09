@@ -146,7 +146,7 @@
   }
 }
 
-
+/* ES 12,13 */
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
@@ -175,4 +175,32 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+}
+
+
+/* ES 12 */
+.ex-12-button:hover .ex-12-top-white{
+  animation: trans-litbit-right 1s alternate infinite linear;
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+  animation: trans-litbit-left 1s alternate infinite linear;
+}
+
+@keyframes trans-litbit-right{
+  from{
+    transform: translateX(0px);
+  }
+  to{
+    transform: translateX(80px);
+  }
+}
+
+@keyframes trans-litbit-left{
+  from{
+    transform: translateX(0px);
+  }
+  to{
+    transform: translateX(-80px);
+  }
 }
